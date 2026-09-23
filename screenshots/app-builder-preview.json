@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Ridge",
+      "hasCanvas": false,
+      "bodyTextLen": 3808,
+      "bodyTextHash": "e7de4e979f00de371dfcbaed75395c362ffd8837c03fe68ccc5b64939dccbd5b",
+      "bodyTextPrefix": "Ridge Product How it works Pricing Stories Dashboard Try the dem",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Ridge",
+      "hasCanvas": false,
+      "bodyTextLen": 3748,
+      "bodyTextHash": "e7c34bbc1f0f94197bcfe69319fd6105d76d0635d73e3b0023bb7f34445ee9ed",
+      "bodyTextPrefix": "Ridge WhatsApp-first lead desk for local trades Leads that book ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
