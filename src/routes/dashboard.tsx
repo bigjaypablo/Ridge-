@@ -72,7 +72,7 @@ function DashboardPage() {
               <RidgeWordmark />
             </Link>
             <span className="hidden text-sm text-muted sm:inline">
-              Alder Roofing · lead desk
+              Alder Roofing · Lead Desk
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -261,11 +261,11 @@ function LeadDetail({ lead, onBack }: { lead: Lead; onBack: () => void }) {
       <dl className="mt-4 grid grid-cols-2 gap-3 text-sm sm:grid-cols-3">
         <Info label="Issue" value={live.issueType} />
         <Info label="Window" value={live.preferredTime} />
-        <Info label="Channel" value={live.channel} />
-        <Info label="WhatsApp" value={formatPhone(live.phone)} />
+        <Info label="Method" value={live.channel === "whatsapp" ? "Text" : live.channel} />
+        <Info label="Phone" value={formatPhone(live.phone)} />
         <Info label="Email" value={live.email} />
         <Info
-          label="Slot"
+          label="Booked Slot"
           value={live.bookedSlot ?? "—"}
         />
       </dl>

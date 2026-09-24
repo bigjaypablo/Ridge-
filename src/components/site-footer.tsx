@@ -8,8 +8,10 @@ export function SiteFooter() {
         <div className="max-w-sm">
           <RidgeWordmark />
           <p className="mt-3 text-sm leading-relaxed text-muted">
-            The WhatsApp-first lead desk for local service businesses. Capture,
-            consent, follow up, book.
+            The simple follow-up system for local service businesses. Capture, follow up, and book the job.
+          </p>
+          <p className="mt-4 text-xs text-muted/80">
+            © {new Date().getFullYear()} Ridge. Developed by Big Jay.
           </p>
         </div>
         <div className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-muted">

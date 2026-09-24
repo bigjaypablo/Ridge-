@@ -22,7 +22,7 @@ function ThanksPage() {
       <main className="mx-auto max-w-lg px-5 py-20 text-center">
         <h1 className="font-display text-3xl font-medium">No request yet</h1>
         <p className="mt-3 text-sm text-muted">
-          Start with the inspection form to see the WhatsApp follow-up.
+          Start with the inspection form to see how the instant text follow-up works.
         </p>
         <Button asChild className="mt-6">
           <Link to="/demo/request">Request inspection</Link>
@@ -41,22 +41,18 @@ function ThanksPage() {
           Request received
         </p>
         <h1 className="mt-3 font-display text-3xl font-medium tracking-tight sm:text-4xl">
-          Thanks, {n}. We’ll contact you via WhatsApp.
+          Thanks, {n}. We sent you an instant text.
         </h1>
         <p className="mt-4 text-sm leading-relaxed text-muted">
-          Alder Roofing just logged {lead.address}. You chose{" "}
-          <span className="text-ink">{lead.channel}</span> as the primary
-          channel — this demo still plays the WhatsApp follow-up, because that’s
-          the path Ridge is built around.
+          Alder Roofing just logged {lead.address}. We reached out to {lead.phone} with two concrete time slots so you can lock in your inspection.
         </p>
         <ul className="mt-6 space-y-2 text-sm text-muted">
           <li>Issue: {lead.issueType}</li>
-          <li>Window: {lead.preferredTime}</li>
+          <li>Preferred window: {lead.preferredTime}</li>
           <li>Phone: {lead.phone}</li>
         </ul>
         <p className="mt-6 text-sm leading-relaxed text-muted">
-          Watch the thread on the right. Pick a time, type a reply, or simulate
-          24 hours of silence to see the chase message.
+          Watch the message thread on the right. Pick a time, type a reply, or simulate 24 hours of silence to see the automatic follow-up check.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <Button asChild>

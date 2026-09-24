@@ -41,7 +41,7 @@ function RequestPage() {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim()))
       next.email = "Enter a valid email.";
     if (phone.replace(/\D/g, "").length < 10)
-      next.phone = "Enter a WhatsApp number with area code.";
+      next.phone = "Enter a valid phone number with area code.";
     if (address.trim().length < 8) next.address = "Enter the property address.";
     if (!issueType) next.issueType = "Select what you are seeing.";
     if (!preferredTime) next.preferredTime = "Pick a time window.";
@@ -73,11 +73,10 @@ function RequestPage() {
       <div>
         <p className="text-sm font-medium text-forest">Free inspection</p>
         <h1 className="mt-2 font-display text-3xl font-medium tracking-tight sm:text-4xl">
-          Tell us where to look. We’ll WhatsApp the time.
+          Tell us where to look. We’ll text you available times.
         </h1>
         <p className="mt-3 max-w-md text-sm leading-relaxed text-muted">
-          Takes about a minute. WhatsApp is the default because it books faster
-          than voicemail — you can choose SMS or email instead.
+          Takes about a minute. We text you straight away with two concrete times so you can pick what works best for your schedule.
         </p>
         <form onSubmit={onSubmit} className="mt-8 space-y-5" noValidate>
           <Field label="Full name" error={errors.name} htmlFor="name">
@@ -101,7 +100,7 @@ function RequestPage() {
               />
             </Field>
             <Field
-              label="WhatsApp number"
+              label="Phone number"
               error={errors.phone}
               htmlFor="phone"
             >
@@ -205,9 +204,8 @@ function RequestPage() {
             />
             <div>
               <Label htmlFor="consent" className="leading-snug">
-                I agree to be contacted by Alder Roofing about this inspection
-                via my selected method. WhatsApp messages may include two time
-                options and one follow-up if I don’t reply.
+                I agree to be contacted by Alder Roofing about this inspection.
+                Messages include two time options and one follow-up check if I don’t reply.
               </Label>
               {errors.consent ? (
                 <p className="mt-1 text-xs text-danger">{errors.consent}</p>
@@ -231,9 +229,9 @@ function RequestPage() {
           <div className="p-6">
             <p className="font-display text-xl font-medium">What happens next</p>
             <ol className="mt-4 space-y-3 text-sm text-muted">
-              <li>1. We confirm on WhatsApp within minutes.</li>
-              <li>2. You pick Thursday 10 AM or Friday 2 PM — or say otherwise.</li>
-              <li>3. If we don’t hear back, we check in once after 24 hours.</li>
+              <li>1. You receive an instant text with appointment options.</li>
+              <li>2. Pick Thursday 10 AM or Friday 2 PM — or reply with a time that works.</li>
+              <li>3. If you get busy, we send one quiet check-in after 24 hours.</li>
             </ol>
           </div>
         </div>
